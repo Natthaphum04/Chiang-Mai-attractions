@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "National Park", sans-serif;
+}
+
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+/* home */
+header{
+    height: 750px;
+    background-image: url("img/cm-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
+
+    .nav-wrapper{
+        padding: 2rem;
+        display: flex;
+        justify-content: space-between;
+
+        .logo{
+            display: flex;
+            align-items: center;
+
+            img{
+                height: 100px;
+                margin-right: 1rem;
+                
+                
+            }
+
+            p{
+                font-size: clamp(1rem, 10vw, 20px);
+                font-weight: bold;
+                color: aliceblue;
+            }
+        }
+
+        .menu{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            li{
+                list-style: none;
+                a{
+                    text-decoration: none;
+                    margin-right: 2rem;
+                    color: aliceblue;
+                    font-size: clamp(1rem, 10vw, 20px);
+                    font-weight: bold;
+                }
+
+                a:hover{
+                    cursor: pointer;
+                    color: rgb(125, 123, 123);
+                }
+            }
+        }
+    }
+    
+    .title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .text-title{
+            .p1{
+              font-size: clamp(2rem, 10vw, 45px);
+              margin-top: 7rem;
+              color: aliceblue;
+              margin-bottom: rem;
+              font-weight: bold;
+            }
+
+            .p2{
+                font-size: clamp(1rem, 10vw, 30px);
+                color: aliceblue;
+                margin-bottom: 1rem;
+                text-align: center;
+              }
+        }
+
+        .btn{
+            display: flex;
+            justify-content: center;
+            
+            .btn1{
+                display: flex;
+                align-items: center;
+                font-size: clamp(1rem, 10vw, 25px);
+                height: 50px;
+                background-color: orange;
+                border: none;
+                border-radius: 10px;
+                padding: 0 10px;
+                box-shadow: 0 5px 15px rgba(255, 164, 54, 0.5);
+                color: black;
+                text-decoration: none;
+                
+            }
+
+            .btn1:hover{
+                background-color: rgb(216, 177, 104);
+            }
+        }
+    }
+
+    @media screen and (max-width:768px) {
+        width: 100%;
+        
+        .title{
+            padding: 1rem;
+        }
+    }
+}
+
+/* Abouut */
+.about{
+    height: 750px;
+    background-image: url("img/about-bg.jpg");
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    .about-box{
+        text-align: start;
+        background-color: rgba(255, 255, 255, 0.4); /* พื้นหลังเป็นสีขาวและโปร่งใส */
+        max-width: 1000px;
+        padding: 2rem;
+        height: 250px;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        backdrop-filter: blur(10px); /* ทำให้พื้นหลังเบลอ*/
+        border-radius: 10px;
+        
+        
+        .title{
+            font-size: clamp(1rem, 10vw, 25px);
+            color: rgb(255, 255, 255);
+            margin-bottom: 1rem;
+        }
+
+        .info{
+            p{
+                font-size: clamp(1rem, 10vw, 20px);
+                color: rgb(241, 232, 220);
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        padding: 0 2rem;
+        .about-box{
+            height: auto;
+        }
+    }
+
+   
+}
+
+/* tourist */
+
+
