@@ -113,10 +113,53 @@ header{
 
     @media screen and (max-width:768px) {
         width: 100%;
-        
-        .title{
-            padding: 1rem;
+
+  .nav-wrapper {
+    flex-direction: column;
+    align-items: center;
+
+    .logo {
+      margin-bottom: 1rem;
+      img {
+        height: 80px;
+      }
+      p {
+        font-size: 18px;
+        text-align: center;
+      }
+    }
+
+    .menu {
+      flex-direction: column;
+      li {
+        margin: 0.5rem 0;
+        a {
+          margin: 0;
+          font-size: 18px;
         }
+      }
+    }
+  }
+
+  .title {
+    padding: 1rem;
+    text-align: center;
+
+    .p1 {
+      font-size: 32px;
+    }
+
+    .p2 {
+      font-size: 20px;
+    }
+
+    .btn {
+      .btn1 {
+        font-size: 18px;
+        height: 45px;
+      }
+    }
+  }
     }
 }
 
@@ -137,13 +180,13 @@ header{
         background-color: rgba(255, 255, 255, 0.4); /* พื้นหลังเป็นสีขาวและโปร่งใส */
         max-width: 1000px;
         padding: 2rem;
-        height: 250px;
+        min-height: 250px;
         align-items: center;
         justify-content: center;
         border: none;
         backdrop-filter: blur(10px); /* ทำให้พื้นหลังเบลอ*/
         border-radius: 10px;
-        
+        overflow: auto;
         
         .title{
             font-size: clamp(1rem, 10vw, 25px);
@@ -160,10 +203,20 @@ header{
     }
 
     @media screen and (max-width: 768px) {
-        padding: 0 2rem;
-        .about-box{
-            height: auto;
-        }
+        padding: 1rem;
+    
+    .about-box {
+        min-height: auto; 
+        padding: 1.5rem;
+    }
+
+    .about-box .info p {
+        font-size: 16px; 
+    }
+
+    .about-box .title {
+        font-size: 20px;
+    }
     }
 
    
